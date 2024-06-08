@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Piedra, Papel o Tijera</h1>
+    </header>
+    <main>
+        <div class="game-container">
+            <div class="player-choice">
+                <h2>Tu elección</h2>
+                <button onclick="playerChoice('rock')">Piedra</button>
+                <button onclick="playerChoice('paper')">Papel</button>
+                <button onclick="playerChoice('scissors')">Tijera</button>
+            </div>
+            <div class="result">
+                <h2>Resultado</h2>
+                <p id="result-message">Elige una opción para empezar</p>
+            </div>
+            <div class="computer-choice">
+                <h2><br>Elección de la <br> computadora</h2>
+                <p id="computer-choice">-</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Piedra, Papel y Tijera</p>
+    </footer>
+    <script src="juego.js"></script>
+</body>
+</html>
